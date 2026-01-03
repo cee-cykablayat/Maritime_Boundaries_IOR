@@ -1,0 +1,169 @@
+
+
+## 🛡️ Step 3: Add Content to .gitignore
+
+Copy and paste this comprehensive `.gitignore` configuration:
+
+```gitignore
+# ============================================================================
+# Deep_Darshak Project - .gitignore
+# ============================================================================
+
+# ============================================================================
+# JUPYTER NOTEBOOK CHECKPOINTS
+# ============================================================================
+**/.ipynb_checkpoints/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+
+#specific checkpoints
+.ipynb_checkpoints
+
+# ============================================================================
+# LARGE DATA FOLDERS - STRAITS BOUNDARIES
+# ============================================================================
+# Exclude the entire Straits_boundaries folder
+
+
+/home/crimsondeepdarshak/Desktop/Deep_Darshak/References/Build_1_docs/Straits_polygon/Straits_boundaries/
+/home/crimsondeepdarshak/Desktop/Deep_Darshak/References/Build_1_docs/Straits_polygon/Straits_boundaries/*
+
+
+# Alternative: If you want to keep the folder structure but not the files
+# References/Build_1_docs/Straits_polygon/Straits_boundaries/*.json
+# References/Build_1_docs/Straits_polygon/Straits_boundaries/*.geojson
+
+# ============================================================================
+# GENERATED DATA AND OUTPUT FILES
+# ============================================================================
+# AIS generated data
+ais_data/
+ais_analysis/
+click_created_polygons/
+custom_polygons/
+custom_straits_polygons/
+
+# Generated visualizations and maps
+*.html
+!index.html  # Keep index.html if you have one
+*_map.html
+*_visualization.html
+
+
+# CSV and JSON outputs (generated data)
+**/ais_data*.csv
+**/ais_data*.json
+**/ais_zone*.csv
+**/zone_summary*.json
+
+# ============================================================================
+# PYTHON RELATED
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Spyder
+.spyderproject
+.spyproject
+
+# ============================================================================
+# LARGE FILES AND DATASETS
+# ============================================================================
+# Any file larger than 50MB
+*.h5
+*.hdf5
+*.nc
+*.pkl
+*.pickle
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# JUPYTER NOTEBOOK OUTPUTS
+# ============================================================================
+# Jupyter Notebook outputs (optional - uncomment if you don't want outputs)
+# *.ipynb_checkpoints
+# **/.ipynb_checkpoints/*
+
+# ============================================================================
+# OPERATING SYSTEM FILES
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============================================================================
+# TEMPORARY AND BACKUP FILES
+# ============================================================================
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.~*
+
+# ============================================================================
+# LOGS
+# ============================================================================
+*.log
+logs/
+*.log.*
+
+# ============================================================================
+# SENSITIVE INFORMATION
+# ============================================================================
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API keys and secrets
+secrets.json
+config_secrets.py
+credentials.json
+
+# ============================================================================
+# PROJECT SPECIFIC - ADD YOUR CUSTOM IGNORES BELOW
+# ============================================================================
+# Add any additional folders or files you want to ignore
+```
+
+---
